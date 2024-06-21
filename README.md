@@ -6,5 +6,6 @@
 
 <h4>Available routes are:</h4>
 
-1) http://localhost/api/products
-2) http://localhost/api/products/{entityId}
+1) GET - http://localhost/api/news
+2) GET - http://localhost/api/news/{entityIdOrSlug}
+3) PATCH - http://localhost/api/news/{entityIdOrSlug}/status
