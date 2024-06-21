@@ -31,7 +31,7 @@ class NewsController extends Controller
     public function changeStatus(string $entity, ChangeStatusRequest $request): ShowResource
     {
         $newsEntity = News::query()->where('id', $entity)->orWhere('slug', $entity)->first();
-        $newsEntity->update(['status', $request->validated('status')]);
+        $newsEntity->update(['status' => $request->validated('status')]);
 
         return new ShowResource($newsEntity);
     }
